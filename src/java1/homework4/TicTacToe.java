@@ -120,6 +120,8 @@ public class TicTacToe {
             for (i = 0; i < map.length; i++) {
                 if (map[i][j] == symbol) {
                     countSymbol++;
+                } else {
+                    countSymbol = 0;
                 }
             }
             if (countSymbol == SERIES) {
@@ -141,6 +143,8 @@ public class TicTacToe {
             for (j = 0; j < map[i].length; j++){
                 if (map[i][j] == symbol){
                     countSymbol++;
+                } else {
+                    countSymbol = 0;
                 }
             }
 
