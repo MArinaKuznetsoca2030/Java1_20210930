@@ -1,7 +1,6 @@
 package java1.homework5;
 
 public class Worker {
-    // ФИО, должность, email, телефон, зарплата, возраст.
    public String fio;
    public String position;
    public String email;
@@ -18,7 +17,6 @@ public class Worker {
         this.age = age;
 
     }
-
 
     public void  info() {
        System.out.println("-------------------------------");

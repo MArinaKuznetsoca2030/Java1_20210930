@@ -22,33 +22,16 @@ public class TestWorker {
                 workersArray[i].info();
                 count++;
             }
+
             i++;
+
         } while (i < workersArray.length);
 
         if (count == 0){
             System.out.println("Сотрудники старше 40 лет отсутствуют");
         }
 
-         /*   for (int i = 0; i < workersArray.length; i++){
-            int count =0;
 
-            if (workersArray[i].age > 40) {
-                workersArray[i].info();
-                count++;
-            }
-            if (i == workersArray.length-1 && count == 0){
-                System.out.println("Сотрудники старше 40 лет отсутствуют");
-            }
-
-
-
-        }
-
-
-    }
-    }
-
-          */
     }
 
 
