@@ -1,32 +1,66 @@
 package java1.homework5;
 
+import java.util.Random;
+
 public class Worker {
-   public String fio;
-   public String position;
-   public String email;
-   public String  phone;
-   public int grade;
-   public int age;
+   private String fio;
+   private String position;
+   private String email;
+   private String phone;
+   private int grade;
+   private int age;
 
-    public Worker (String fio, String position, String email, String phone, int grade, int age) {
-        this.fio = fio;
-        this.position = position;
-        this.email = email;
-        this.phone = phone;
-        this.grade = grade;
-        this.age = age;
+   public Worker(String fio, String position, String email, String phone, int grade, int age){
+       this.fio = fio;
+       this.position = position;
+       this.email = email;
+       this.phone = phone;
+       this.grade = grade;
+       this.age = age;
+   }
 
+   public String setFio() {
+       return fio;
+   }
+
+    public String setPosition() {
+        return position;
+    }
+    public String setEmail() {
+        return email;
+    }
+    public String setPhone(String s) {
+        return phone;
     }
 
-    public void  info() {
-       System.out.println("-------------------------------");
-       System.out.println("ФИО: "+ fio);
-       System.out.println("Должность: "+ position);
-       System.out.println("email: "+ email);
-       System.out.println("Телефон: "+ phone);
-       System.out.println("Зарплата: "+ grade);
-       System.out.println("Возраст: "+ age);
-       System.out.println("-------------------------------");
+    public int setGrade() {
+        return grade;
+    }
+
+    public int setAge(Random random) {
+        return  age;
+    }
+
+
+   public int getAge() {
+       return age;
+   }
+
+    public void  printInfo() {
+       System.out.println(this);
+    }
+
+    @Override
+    public String  toString() {
+       return "Worker{" +
+               "ФИО:'" + fio + '\'' +
+               ", Должность:'" + position + '\'' +
+               ", email: '"+ email + '\'' +
+               ", Телефон: '"+ phone + '\'' +
+               ", Зарплата: '"+ grade + '\'' +
+               ", Возраст: '"+ age + '\'' +
+                '}';
+
     }
 
 }
